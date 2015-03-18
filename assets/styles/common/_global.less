@@ -11,8 +11,8 @@
 }
 body {
   background: transparent url('../images/bg.jpg') top center;
+  padding-bottom: 20px;
 }
-
 h1 {
   color: #111;
 }
@@ -20,12 +20,71 @@ h1 {
   background: transparent url('../images/content-bg.png');
   margin-top: 60px;
 }
-
 .home .content {
   background: transparent;
   margin-top: 0;
 }
-
 .mainlogo.img-responsive {
     margin: 0 auto;
+}
+.oldnews {
+  font-family: 'oldnewspapertypesregular';
+}
+.oldnews-xs:extend(.oldnews) {
+  font-size: 30px;
+  font-size: 2vmin;
+}
+.oldnews-sm:extend(.oldnews) {
+  font-size: 36px;
+  font-size: 3vmin;
+}
+.oldnews-static:extend(.oldnews) {
+  font-size: 36px;
+}
+.oldnews-md:extend(.oldnews) {
+  font-size: 42px;
+  font-size: 3.25vmin;
+}
+.oldnews-lg:extend(.oldnews) {
+  font-size: 48px;
+  font-size: 3.5vmin;
+}
+.oldnews-xl:extend(.oldnews) {
+  font-size: 54px;
+  font-size: 4.25vmin;
+}
+.oldnews-xxl:extend(.oldnews) {
+  font-size: 60px;
+  font-size: 5vmin;
+}
+.oldnews-xxxl:extend(.oldnews) {
+  font-size: 72px;
+  font-size: 5.75vmin;
+}
+.starbg {
+  background: transparent url('../images/starbg.png') no-repeat;
+  width: 128px;
+  height: 122px;
+  padding-top: 40px;
+  margin-top: -50px;
+}
+.scroll-top {
+  margin-top: -40px;
+}
+.bands {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  p {
+    line-height: 1;
+  }
+  a {
+    color: inherit;
+  }
+  a:hover{
+    text-decoration: none;
+    color: lighten(@gray-base, 33.5%);
+  }
+}
+.page.bands{
+  margin-top: 0;
 }

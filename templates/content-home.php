@@ -6,7 +6,7 @@
 </div>
 <div class="row">
   <div class="col-sm-2">
-   $10adv
+    <p class="oldnews-lg">$10adv</p>
   </div>
   <div class="col-sm-2 col-sm-offset-8 text-center">
     $16dos

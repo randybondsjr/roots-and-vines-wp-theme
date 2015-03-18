@@ -9,10 +9,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<!--      <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>-->
+      <?php if(!is_front_page()): ?>
+        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><img src="/wordpress/wp-content/themes/roots-and-vines-wp-theme/dist/images/logo-sm.png" alt="Roots and Vines Fest Logo" class="img-responsive mainlogo"></a>
+      <?php endif; ?>
     </div>
 
-    <nav class="collapse navbar-collapse" role="navigation">
+    <nav class="collapse navbar-collapse <?php if(is_front_page()){echo "navbar-center";} ?>" role="navigation">
       <?php
       if (has_nav_menu('primary_navigation')) :
         wp_nav_menu(['theme_location' => 'primary_navigation', 'walker' => new Nav\SageNavWalker(), 'menu_class' => 'nav navbar-nav']);

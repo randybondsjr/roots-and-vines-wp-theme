@@ -79,3 +79,7 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+jQuery(document).ready(function() {
+	jQuery('iframe').wrap("<div class='iframe-flexible-container'></div>");
+});

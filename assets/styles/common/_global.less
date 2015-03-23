@@ -40,6 +40,10 @@ h1 {
 }
 .oldnews-static:extend(.oldnews) {
   font-size: 36px;
+  line-height: 0.8;
+  a {
+    color: #333;
+  }
 }
 .oldnews-md:extend(.oldnews) {
   font-size: 42px;
@@ -87,4 +91,19 @@ h1 {
 }
 .page.bands{
   margin-top: 0;
+}
+.iframe-flexible-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+}
+.iframe-flexible-container iframe,   
+.iframe-flexible-container object,  
+.iframe-flexible-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100%;
 }
